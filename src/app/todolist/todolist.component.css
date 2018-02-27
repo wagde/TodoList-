@@ -1,0 +1,12 @@
+.container{font-family: Impact, Charcoal, sans-serif;
+    box-shadow: 10px 10px 5px grey;
+    margin-top: 5%;  
+}
+
+.deleteButt{
+    float: right;
+    margin-right: 5px;
+}
+li{
+    text-align: left;
+}

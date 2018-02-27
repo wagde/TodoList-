@@ -1,0 +1,9 @@
+.container{
+ margin-top: 5%;    
+    font-family: Impact, Charcoal, sans-serif;
+    box-shadow: 10px 10px 5px grey;
+
+}
+form{
+    padding: 10px;
+}

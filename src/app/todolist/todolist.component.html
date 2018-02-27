@@ -1,0 +1,19 @@
+<div (window:beforeunload)="doSomething()"  class="container">
+  <div class="col-xs-1 text-center">
+    <H3>Your Task Well Added Here </H3>
+    <ol>
+      <li *ngFor="let item of toDoList; let i = index">
+        <span id={{i}} >{{item.task}} </span>
+  
+        <button class="btn btn-primary mb-2 deleteButt" (click)="deleteTask(i)">
+          X</button>
+        <button class="btn btn-primary mb-2 deleteButt" *ngIf="!item.vis" (click)="editTask(i);">
+          Edit</button>
+        <button class="btn btn-primary mb-2 deleteButt" *ngIf="item.vis" (click)="doneEdit(i);">
+          Dnoe</button>
+        <hr> </li>
+
+    </ol>
+  </div>
+</div>
+{{task}}
